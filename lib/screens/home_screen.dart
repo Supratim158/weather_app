@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/constants/app_colors.dart';
+import 'package:weather_app/screens/search_screen.dart';
+import 'package:weather_app/screens/settings_screen.dart';
 import 'package:weather_app/screens/weather_screen.dart';
+
+import 'forecast_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -33,9 +37,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
   final _screens = [
     const WeatherScreen(),
-    const Center(child: Text('Search Screen')),
-    const Center(child: Text('Sunny Screen')),
-    const Center(child: Text('Settings Screen')),
+    const SearchScreen(),
+    const ForecastReportScreen(),
+    const SettingsScreen(),
   ];
 
   @override
